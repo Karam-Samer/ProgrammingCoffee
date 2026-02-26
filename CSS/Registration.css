@@ -1,0 +1,102 @@
+#Registration .all-container {
+    width: 95%;
+    height: 550px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: auto;
+}
+
+#Registration .Register {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    background: #ada996;
+    background: -webkit-linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+}
+
+#Registration .Register .box {
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#Registration .Register .box .formCol {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #333;
+    z-index: 1;
+    flex-direction: column;
+}
+
+#Registration .Register .box.signUp .formCol h2 {
+    margin: auto;
+}
+
+#Registration .Register .box form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#Registration .Register .box .questionCol {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 40px;
+    z-index: 1;
+
+}
+
+#Registration .Register .box .formCol,
+#Registration .Register .box .questionCol {
+    transition-duration: 0.5s;
+}
+
+#Registration .Register .box.signIn .formCol {
+    transform: translateX(0);
+}
+
+
+#Registration .Register .box.signUp .formCol {
+    transform: translateX(100%);
+}
+
+#Registration .Register .box.signIn form {
+    gap: 20px;
+}
+
+#Registration .Register .box.signUp form {
+    gap: 10px;
+}
+
+#Registration .Register .box.signIn .questionCol {
+    transform: translateX(0);
+}
+
+#Registration .Register .box.signUp .questionCol {
+    transform: translateX(-100%);
+}
+
+
+
+.dropdown-menu {
+    width: fit-content;
+}
+
+ #Registration .Register .box.expand .questionCol {
+    width: 100%;
+    right: 0;
+    transform: translateX(0);
+}

@@ -1,0 +1,48 @@
+:root {
+    --bg-color: #000000b3;
+    --main-color: #F5F5F5;
+}
+
+body {
+    background: #152331;
+    background: -webkit-linear-gradient(to right, #0B1A2A, #152331);
+    background: linear-gradient(to right, #0B1A2A, #152331);
+    color: var(--main-color);
+    min-height: 100vh;
+}
+
+header nav {
+    background-color: #2c384e;
+}
+
+header nav a.navbar-brand {
+    color: #F28C28;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav .nav-item:nth-of-type(1) i {
+    color: #000;
+}
+
+nav .nav-item:nth-of-type(2) i {
+    color: darkblue;
+}
+
+nav .nav-item:nth-of-type(3) i {
+    color: darkred;
+}
+
+nav i:hover {
+    transform: scale(1.2);
+    transition-duration: .3s;
+}
+
+
+.dropdown-menu {
+    width: fit-content;
+}
+
+.dropdown {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}

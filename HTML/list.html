@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/list/index.css">
+    <link rel="stylesheet" href="../CSS/list/index.responsive.css">
+    <link rel="stylesheet" href="../CSS/index.responsive.css">
+    <script src="../JS/bootstrap.min.js" defer></script>
+    <script src="../JS/list/function.js" defer></script>
+    <script src="../JS/function.js"></script>
+    <script src="../JS/list/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">KA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://github.com/Karam-Samer/"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://www.linkedin.com/in/karam-alatwan-011819330"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="mailto:karam.samer50@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item border border-2 bg-info rounded-5 me-2">
+                            <a class="nav-link" href="Registration.html?mode=signIn">Sign In</a>
+                        </li>
+                        <li class="nav-item border border-2 bg-primary rounded-5">
+                            <a class="nav-link" href="Registration.html?mode=signUp">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="List" class="py-5">
+        <div class="container">
+            <div class="box mx-auto p-4 text-center rounded-3">
+                <h2 class="mb-2">To Do List</h2>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-4" placeholder="Add new task">
+                        <span class="input-group-text"><button class="btn btn-primary rounded-circle" id="addTaskBtn"
+                                type="submit"><i class="fa-solid fa-plus"></i></button></span>
+                    </div>
+                </form>
+                <div class="tasks">
+                    <p class="alert alert-warning text-center d-none"></p>
+                    <ul id="TodoList" class="list-group list-unstyled text-start">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 mt-4 text-center d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#BoxModal"
+                    data-bs-whatever="@mdo">See Done List</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="BoxModal" tabindex="-1" aria-labelledby="BoxModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable d-flex justify-content-center align-items-center">
+            <div class="modal-content">
+                <h5 class="modal-title text-center py-2" id="BoxModalLabel">Done List</h5>
+                <i type="button" class="fa-solid fa-circle-xmark text-danger fs-4 py-2 px-3"
+                    data-bs-dismiss="modal"></i>
+                <div class="modal-body">
+                    <p class="alert alert-warning text-center d-none">No tasks completed yet!</p>
+                    <ul id="DoneList" class="list-group list-unstyled text-start"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

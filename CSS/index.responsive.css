@@ -1,0 +1,23 @@
+@media (max-width: 1300px) {
+    .dropdown {
+        border: none !important;
+    }
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {}
+
+@media (min-width: 577px) and (max-width: 1300px) {
+    #Registration .Register .box.signUp .formCol {
+        transform: translateX(100%);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .dropdown {
+        border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    }
+}
+
+@media (min-width: 1181px) and (max-width:1300px) {}

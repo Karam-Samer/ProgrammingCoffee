@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/keyframes.css">
+    <link rel="stylesheet" href="../CSS/Registration.css">
+    <link rel="stylesheet" href="../CSS/index.responsive.css">
+    <script src="../JS/bootstrap.min.js" defer></script>
+    <script src="../JS/function.js" defer></script>
+    <script src="../JS/Registration.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">KA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://github.com/Karam-Samer/"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://www.linkedin.com/in/karam-alatwan-011819330"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="mailto:karam.samer50@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item border border-2 bg-info rounded-5 me-2">
+                            <a class="nav-link" href="Registration.html?mode=signIn">Sign In</a>
+                        </li>
+                        <li class="nav-item border border-2 bg-primary rounded-5">
+                            <a class="nav-link" href="Registration.html?mode=signUp">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="Registration" class="my-4">
+            <h1 class="text-center py-4">Registration Page</h1>
+            <div class="container">
+                <div class="all-container rounded-3 rounded-4">
+                    <div class="Register h-100">
+                        <div class="box signIn h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-sm-6 formCol">
+                                    <form data-type="signIn" class="py-5 px-2">
+                                        <h2 class="text-center text-dark"></h2>
+                                        <div class="input-group extra-field d-none">
+                                            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="First Name *"
+                                                name="firstName" required>
+                                        </div>
+                                        <div class="input-group extra-field d-none">
+                                            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                            <input type="text" class="form-control" placeholder="Last Name *"
+                                                name="lastName" required>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                            <input type="text" class="form-control" placeholder="Email *" name="email"
+                                                required>
+                                        </div>
+                                        <div class="input-group extra-field d-none">
+                                            <span class="input-group-text"><i class="fa-solid fa-hashtag"></i></span>
+                                            <input type="text" class="form-control" placeholder="Age *" name="age"
+                                                required>
+                                        </div>
+                                        <div class="input-group extra-field d-none">
+                                            <span class="input-group-text"><i
+                                                    class="fa-solid fa-mobile-button"></i></span>
+                                            <input type="text" class="form-control" placeholder="Phone *" name="phone"
+                                                required>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i
+                                                    class="fa-solid fa-mobile-button"></i></span>
+                                            <input type="password" class="form-control" placeholder="Password *"
+                                                name="password" required>
+                                        </div>
+                                        <div class="input-group extra-field d-none">
+                                            <span class="input-group-text"><i
+                                                    class="fa-solid fa-mobile-button"></i></span>
+                                            <input type="password" class="form-control" placeholder="Confirm Password *"
+                                                name="confirmPassword" required>
+                                        </div>
+
+                                        <button class="btn btn-primary w-100"></button>
+                                        <div
+                                            class="questionForm d-flex align-items-center justify-content-center flex-column text-center d-sm-none">
+                                            <h4></h4>
+                                            <button class="btn btn-outline-primary" data-type="signIn"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div
+                                    class="col-6 d-none d-sm-flex align-items-center justify-content-center questionCol bg-info rounded-start-5">
+                                    <div class="question text-center">
+                                        <h4 class="h1 text-primary"></h4>
+                                        <p class="text-danger"></p>
+                                        <button class="btn btn-outline-primary" data-type="signIn"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </header>
+</body>
+
+</html>

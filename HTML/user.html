@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/global.css">
+    <link rel="stylesheet" href="../CSS/keyframes.css">
+    <link rel="stylesheet" href="../CSS/index.responsive.css">
+    <link rel="stylesheet" href="../CSS/user.css">
+    <script src="../JS/bootstrap.min.js" defer></script>
+    <script src="../JS/function.js" defer></script>
+    <script src="../JS/user.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">KA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://github.com/Karam-Samer/"><i
+                                    class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="https://www.linkedin.com/in/karam-alatwan-011819330"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="mailto:karam.samer50@gmail.com"><i
+                                    class="fa-solid fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item border border-2 bg-info rounded-5 me-2">
+                            <a class="nav-link" href="Registration.html?mode=signIn">Sign In</a>
+                        </li>
+                        <li class="nav-item border border-2 bg-primary rounded-5">
+                            <a class="nav-link" href="Registration.html?mode=signUp">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="Profile" class="py-3">
+            <h1 class="text-center py-4 text-center" id="welcomeMsg"></h1>
+            <div class="box py-3 px-4 rounded-4 w-50 mx-auto">
+                <div class="image d-flex" id="ProfileImgContainer">
+                    <img id="profileImage" src="../images/default-profile.png" class="rounded-circle mb-3 m-auto">
+                </div>
+                <form id="ProfileForm" data-type="show">
+                    <div class="input-group mb-3  d-none" id="ImageDiv">
+                        <input type="file" class="form-control" id="imageInput" name="image">
+                        <label class="input-group-text" for="imageInput">Upload</label>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="image"></p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="First Name *" name="firstName"
+                            id="firstName" required>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="firstName" role="alert">
+                    </p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Last Name *" name="lastName" id="lastName"
+                            required>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="lastName" role="alert"></p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="Email *" name="email" id="email">
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="email" role="alert"></p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-hashtag"></i></span>
+                        <input type="text" class="form-control" placeholder="Age *" name="age" id="age" required>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="age" role="alert"></p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-mobile-button"></i></span>
+                        <input type="text" class="form-control" placeholder="Phone *" name="phone" id="phone" required>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="phone" role="alert"></p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="fa-solid fa-mobile-button"></i></span>
+                        <input type="password" class="form-control" placeholder="Password *" name="password"
+                            id="password" required>
+                    </div>
+                    <p class="alert alert-danger d-none text-start" data-error-name="password" role="alert"></p>
+                    <button class="btn btn-primary w-100" type="submit"></button>
+                </form>
+            </div>
+        </section>
+    </header>
+
+
+</body>
+
+</html>

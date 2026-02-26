@@ -1,0 +1,54 @@
+.form-card,
+.preview-card {
+    background-color: rgb(44, 56, 78);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+    background-color: rgb(31, 42, 59);
+    color: var(--main-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.checkboxes {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 12px;
+    background-color: rgb(44, 56, 78);
+    color: var(--main-color);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition-duration: 0.2s;
+}
+
+.checkboxes:hover {
+    background-color: rgb(61, 75, 110);
+}
+
+input[type="checkbox"]:checked+.checkboxes {
+    background-color: var(--main-color);
+    color: rgb(31, 42, 59);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.checkboxes:checked+label {
+    background-color: var(--main-color);
+    color: rgb(31, 42, 59);
+    border: none;
+}
+
+.btn-outline-light,
+.btn-outline-info {
+    border-width: 2px;
+}
+
+#outputMarkdown {
+    resize: vertical;
+    min-height: 360px;
+}
+
+#outputMarkdown:disabled {
+    background-color: rgb(31, 42, 59);
+    color: var(--main-color);
+    opacity: 1;
+}
