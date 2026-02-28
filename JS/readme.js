@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 ball();
 let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 if (!currentUser) {
@@ -69,4 +70,5 @@ ${badges || skillsText || 'Add your skills here'}
 - GitHub: [${username || 'your-username'}](https://github.com/${username || 'your-username'})
 - Email: ${email || 'you@example.com'}
 `;
+});
 });
