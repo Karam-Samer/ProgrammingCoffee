@@ -22,6 +22,7 @@ if (modeFromUrl === "signIn" || modeFromUrl === "signUp") {
 }
 
 InsideHtmlNavEditor();
+ball();
 box.classList.remove("signIn", "signUp");
 box.classList.add(myForm.dataset.type);
 

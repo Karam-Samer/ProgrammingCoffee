@@ -27,7 +27,7 @@ else {
 
 document.getElementById("ProfileForm").addEventListener("submit", function (e) {
     e.preventDefault();
-
+    ball();
     if (myForm.dataset.type === "show") {
         setFormEdit(myForm);
         return;

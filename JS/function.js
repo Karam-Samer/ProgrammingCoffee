@@ -1,3 +1,13 @@
+function ball(){
+    const ball = document.querySelector(".ball");
+    setTimeout(() => {
+        ball.style.display = "block";
+    }, 1000);
+    document.addEventListener("mousemove", function (e) {
+        ball.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+    });
+}
+
 function signin() {
     formBtn = myForm.querySelector("button");
     formH2.textContent = "Sign In";

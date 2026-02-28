@@ -46,3 +46,16 @@ nav i:hover {
 .dropdown {
     border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
 }
+
+.ball{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(242, 140, 40);
+    border-radius: 50%;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0.3;
+    transition-duration: 0.1s;
+    display: none;
+}
