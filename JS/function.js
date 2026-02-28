@@ -6,7 +6,7 @@ function ball(){
     document.addEventListener("mousemove", function (e) {
         ball.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
     });
-}
+};
 
 function signin() {
     formBtn = myForm.querySelector("button");

@@ -8,7 +8,7 @@ let formEle = document.querySelector("form"),
     Id = 0;
 
 InsideHtmlNavEditor();
-
+ball();
 checkTasks();
 
 (function () {
